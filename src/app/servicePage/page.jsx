@@ -26,8 +26,8 @@ const ServicePage = () => {
   ];
 
   return (
-    <div className="h-[calc(100vh-70px)] p-4 flex items-center justify-center bg-gray-50">
-      <div className="flex gap-4 flex-wrap">
+    <div className="h-[calc(100vh-70px)] p-4 bg-gray-50">
+      <div className="flex gap-4 flex-wrap justify-center items-center h-full py-4 overflow-y-auto">
         {services.map((service) => {
           return (
             <ServicesCards

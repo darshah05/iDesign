@@ -23,19 +23,21 @@ const OurTeam = () => {
 
   return (
     <div className="flex justify-center items-center h-[calc(100vh-70px)] p-4">
-      <div className="flex justify-between w-3/4">
+      <div className="flex justify-center gap-4 flex-wrap w-3/4">
         {members.map((member) => {
           return (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center" key={member.name}>
               <Image
-                key={member.name} // Add a unique key for each member
                 src={member.image}
                 alt={`Profile Image of ${member.name}`} // Descriptive alt text
                 width={200}
                 height={200}
                 className="rounded-full h-[200px]"
               />
-              <h1 className="text-2xl font-bold"><span className="text-red-500">{member.name[0]}</span>{member.name.slice(1)}</h1>
+              <h1 className="text-2xl font-bold">
+                <span className="text-red-500">{member.name[0]}</span>
+                {member.name.slice(1)}
+              </h1>
               <p>{member.role}</p>
             </div>
           );

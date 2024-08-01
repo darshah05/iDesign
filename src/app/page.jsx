@@ -52,10 +52,10 @@ export default function Home() {
         <h1 className="text-3xl font-bold text-center mb-16">Why Choose Us</h1>
         <div className=" h-full m-4">
           <div className="plus-points grid grid-cols-3 gap-4 max-md:grid-cols-2">
-            {chooseUs.map((reasons) => {
+            {chooseUs.map((reasons,index) => {
               return (
                 <div
-                  key={reasons.title}
+                  key={index}
                   className={`${reasons.styling} shadow-xl p-2 rounded-xl min-h-[200px] flex flex-col items-center justify-center gap-5 text-center bg-[rgba(255,255,255,.5)]`}
                 >
                   <h2 className="font-bold text-xl">{reasons.title}</h2>

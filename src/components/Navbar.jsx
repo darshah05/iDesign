@@ -29,15 +29,15 @@ const Navbar = () => {
   return (
     <div className={`w-full m-0 py-4 px-6 h-[70px] flex justify-between items-center ${pathname==='/contactUs' && "bg-gray-900 text-white"}`}>
       <div className="left font-bold text-3xl">
-        <Link href={'/'}><span className="text-red-500">i</span>Design</Link>
+        <Link href='/'><span className="text-red-500">i</span>Design</Link>
       </div>
       <div className="right">
         <ul className="flex gap-5">
           {navigationMenu.map((item) => {
             return (
-              <Link href={`${item.url}`}>
+              <Link href={`${item.url}`} key={item.title}>
+                
                 <li
-                  key={item.title}
                   className={`p-2 ${
                     pathname === item.url &&
                     pathname !== "/contactUs" &&
