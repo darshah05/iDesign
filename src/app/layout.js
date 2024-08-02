@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Link from "nxt/link";
 
 export const metadata = {
   title: "iDesign",
@@ -12,13 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-   
+   <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SCZ9P4PQ21"></Script>
+<Script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SCZ9P4PQ21');
+</Script>
 
       <body className={`${inter.className} `}>
         <Navbar />
         <div className="h-[calc(100vh-70px)]">{children}</div>
       </body>
-  <GoogleAnalytics gaId="G-SCZ9P4PQ21" />
+
     </html>
   );
 }
