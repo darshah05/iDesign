@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <!-- Google tag (gtag.js) -->
+   
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCZ9P4PQ21"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
