@@ -33,6 +33,7 @@ const ServicePage = () => {
         {services.map((service, index) => {
           return (
             <motion.div
+              key={service.title}
               animate={{
                 translateY: [30, 0],
                 opacity: [0, 1],
@@ -44,7 +45,6 @@ const ServicePage = () => {
               }}
             >
               <ServicesCards
-                key={service.title}
                 title={service.title}
                 description={service.description}
               />
