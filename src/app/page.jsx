@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const chooseUs = [
@@ -34,25 +36,47 @@ export default function Home() {
   return (
     <div className="h-[calc(100vh-70px)] overflow-y-auto bg-[radial-gradient(50%_50%_at_50%_50%,rgba(202,152,218,0.40)_0%,rgba(255,255,255,0.00)_100%)] md:snap-y md:snap-mandatory no-scrollbar">
       <div className="h-[calc(100vh-70px)] flex flex-col justify-center items-center md:snap-center scroll-smooth">
-        <h1 className="text-4xl font-bold text-center">
+        <motion.h1
+          className="text-4xl font-bold text-center"
+          animate={{
+            translateY: [-10, 0],
+            opacity: [0, 1],
+          }}
+          transition={{ delay: 1, duration: 3, type: "spring" }}
+        >
           Empowering Your Business with <br /> Cutting-Edge IT Solutions
-        </h1>
-        <p className="m-4">
+        </motion.h1>
+        <motion.p
+          className="m-4"
+          animate={{
+            translateY: [10, 0],
+            opacity: [0, 1],
+          }}
+          transition={{ delay: 1, duration: 3, type: "spring" }}
+        >
           Innovative & Customized IT Services <br /> to elevate your business
           performance
-        </p>
-        <Link
-          href="/contactUs"
-          className="bg-blue-800 text-white rounded-md cursor-pointer hover:bg-blue-500 p-2"
+        </motion.p>
+        <motion.div
+          animate={{
+            translateY: [20, 0],
+            opacity: [0, 1],
+          }}
+          transition={{ delay: 1, duration: 3.5, type: "spring" }}
         >
-          Contact Us
-        </Link>
+          <Link
+            href="/contactUs"
+            className="bg-blue-800 text-white rounded-md cursor-pointer hover:bg-blue-500 p-2"
+          >
+            Contact Us
+          </Link>
+        </motion.div>
       </div>
       <div className="choose-us h-[calc(100vh-70px)] p-4 md:snap-center">
         <h1 className="text-3xl font-bold text-center mb-16">Why Choose Us</h1>
         <div className=" h-full m-4">
           <div className="plus-points grid grid-cols-3 gap-4 max-md:grid-cols-2">
-            {chooseUs.map((reasons,index) => {
+            {chooseUs.map((reasons, index) => {
               return (
                 <div
                   key={index}
