@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "iDesign",
   description:
-    "Welcome to iDesign, your premier IT consultancy firm. We specialize in delivering comprehensive solutions, including full-stack web development, custom mobile applications, and advanced artificial intelligence integrations. Partner with us to enhance your business operations and drive innovation with our tailored technology services.",
+    "Welcome to iDesign, your go-to IT consultancy for full-stack web development, custom mobile apps, and AI integrations. Boost your business with our tailored tech solutions.",
 };
 
 export default function RootLayout({ children }) {

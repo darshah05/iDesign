@@ -4,7 +4,7 @@ import ServiceList from "@/components/ServiceList";
 export const metadata = {
   title: "iDesign | Services",
   description:
-    "Discover iDesign's range of expert IT services designed to elevate your business. Our offerings include Custom Software Development for tailored, scalable solutions, Full Stack Website Development for dynamic and responsive web experiences, comprehensive Search Engine Optimization (SEO) to boost your online visibility, and insightful Business Data Analysis to turn data into strategic advantages. Explore how our specialized services can enhance your business efficiency and online presence.",
+    "Explore iDesign's expert IT services: Custom Software Development, Full Stack Website Development, SEO for better visibility, and Business Data Analysis to drive strategic growth. Enhance your business efficiency and online presence today.",
 };
 const ServicePage = () => {
   return (

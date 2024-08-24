@@ -4,7 +4,7 @@ import React from "react";
 export const metadata = {
   title: "iDesign | Contact Us",
   description:
-    "Get in touch with iDesign through our Contact Page. Whether you have questions, require support, or want to discuss a new project, our team is ready to assist you. Use the contact form to reach out directly, and let's start a conversation about how we can work together to achieve your goals.",
+    "Get in touch with iDesign via our Contact Page. Reach out for support, inquiries, or project discussions. Use our form to connect and start a conversation on how we can help achieve your goals.",
 };
 const ContactUs = () => {
   return (

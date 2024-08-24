@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata = {
   title: "iDesign | Our Team",
   description:
-    "Meet the dedicated professionals behind iDesign. Our 'Our Team' page introduces you to the talented experts driving innovation and delivering exceptional IT solutions. Learn about their diverse skills, industry experience, and commitment to helping clients succeed. Discover the people who make iDesign a leading IT consultancy firm.",
+    "Meet the experts behind iDesign. Explore the skills and experience of our team driving innovation and delivering top IT solutions, making iDesign a leading consultancy firm.",
 };
 
 const OurTeam = () => {
