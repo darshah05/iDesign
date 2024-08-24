@@ -73,7 +73,7 @@ export default function Home() {
         </motion.div>
       </div>
       <div className="choose-us h-[calc(100vh-70px)] p-4 md:snap-center">
-        <h1 className="text-3xl font-bold text-center mb-16">Why Choose Us</h1>
+        <p className="text-3xl font-bold text-center mb-16">Why Choose Us</p>
         <div className=" h-full m-4">
           <div className="plus-points grid grid-cols-3 gap-4 max-md:grid-cols-2">
             {chooseUs.map((reasons, index) => {
@@ -91,9 +91,9 @@ export default function Home() {
         </div>
       </div>
       <div className="Join our Team md:snap-center h-[calc(100vh-70px)] flex flex-col items-center justify-center text-center">
-        <h1 className="text-3xl font-bold text-gray-800">
+        <p className="text-3xl font-bold text-gray-800">
           Join Our Innovative Team
-        </h1>
+        </p>
         <p className="text-lg text-gray-600 w-3/4">
           Are you passionate about technology and shaping the future? <br />
           We're seeking talented individuals to join our dynamic team and
@@ -107,9 +107,9 @@ export default function Home() {
         </Link>
       </div>
       <div className="relative h-[300px] md:snap-start">
-        <h1 className="text-2xl font-bold text-center p-4 rounded-xl">
+        <p className="text-2xl font-bold text-center p-4 rounded-xl">
           Footer Section
-        </h1>
+        </p>
         <p className="text-gray-600 text-center absolute bottom-0 left-0 right-0">
           Copyright © 2024 iDesign. All rights reserved.
         </p>

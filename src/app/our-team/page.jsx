@@ -40,10 +40,10 @@ const OurTeam = () => {
                 height={200}
                 className="rounded-full h-[200px]"
               />
-              <h1 className="text-2xl font-bold">
+              <p className="text-2xl font-bold">
                 <span className="text-red-500">{member.name[0]}</span>
                 {member.name.slice(1)}
-              </h1>
+              </p>
               <p>{member.role}</p>
             </div>
           );
