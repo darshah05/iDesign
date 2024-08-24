@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "iDesign | Our Team",
+  description:
+    "Meet the dedicated professionals behind iDesign. Our 'Our Team' page introduces you to the talented experts driving innovation and delivering exceptional IT solutions. Learn about their diverse skills, industry experience, and commitment to helping clients succeed. Discover the people who make iDesign a leading IT consultancy firm.",
+};
+
 const OurTeam = () => {
   const members = [
     {
