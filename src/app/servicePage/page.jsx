@@ -2,7 +2,7 @@ import React from "react";
 import ServiceList from "@/components/ServiceList";
 
 export const metadata = {
-  title: "iDesign | Services",
+  title: "Our Services | iDesign - Comprehensive IT Solutions",
   description:
     "Explore iDesign's expert IT services: Custom Software Development, Full Stack Website Development, SEO for better visibility, and Business Data Analysis to drive strategic growth. Enhance your business efficiency and online presence today.",
 };

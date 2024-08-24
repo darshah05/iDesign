@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "iDesign | Our Team",
+  title: "Our Team | iDesign - IT Experts Driving Innovation",
   description:
     "Meet the experts behind iDesign. Explore the skills and experience of our team driving innovation and delivering top IT solutions, making iDesign a leading consultancy firm.",
 };

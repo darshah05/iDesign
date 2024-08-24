@@ -6,7 +6,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "iDesign",
+  title: "iDesign - Your Premier IT Consultancy",
   description:
     "Welcome to iDesign, your go-to IT consultancy for full-stack web development, custom mobile apps, and AI integrations. Boost your business with our tailored tech solutions.",
 };
