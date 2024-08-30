@@ -1,0 +1,9 @@
+# This is the robots.txt file for your Next.js project
+
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow: 
+Sitemap: https://i-design-six.vercel.app/sitemap.xml
+
+User-agent: *
+Crawl-delay: 10
